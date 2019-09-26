@@ -1,4 +1,4 @@
-https://github.com/Fangv1/haplotype_Arabidopsis/blob/master/data/readme#data for the code of FH_GWAS.r
+#data for the code of SNP_FH_GWAS.r
 
 ###phenotypic data (FT10_phenotype.txt)
 the first column is the genotype and second column is the phenotypic value the first row is 'Genotype Phenotype'
