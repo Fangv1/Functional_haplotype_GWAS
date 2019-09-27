@@ -1,4 +1,4 @@
-# haplotype_Arabidopsis
+# Functional haplotype GWAS
 Selecting closely-linked SNPs based on local epistatic effects for haplotype construction improves power of association mapping
 
 ### phenotypic data (FT10_phenotype.txt)
