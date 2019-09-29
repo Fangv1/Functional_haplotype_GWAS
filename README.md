@@ -4,11 +4,11 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 ### SNP_FH_GWAS.r
 SNP_FH_GWAS.r is the code for SNP_based GWAS and functional_haplotype_based GWAS.
 
-To run SNP_based GWAS code, you should prepare three data: phenotypic data, genotypic data and kinship matrix. 
+To run SNP_based GWAS code, you should prepare three data: phenotypic data (FT10_phenotype.txt), genotypic data (genodata.txt), file of information of markers (genodata_info.txt) and kinship matrix (all_chr_1003_RD). 
 
-For functional_haplotype_based GWAS, another three files are needed. The files can be called as haplotype phases file (hapdata.txt), haplotype information file (hapdata_info.txt) and the results of SNP_based GWAS (snp_gwas_out.txt).
+For functional_haplotype_based GWAS, another two files are needed for constructing haplotype. The GEN file (hapdata.txt) and SAMPLE file (hapdata_info.txt) can be obtained by software 'SHAPEIT'. The results of SNP_based GWAS (snp_gwas_out.txt) is used for filter the SNPs.
  
-Subsets of the original data set (The 1001 Genome Consortium 2016) for running the code can be found in the folder 'data' that includes phenotypic data ('FT10_phenotype.txt'), genotypic data ('genodata.txt'), Rogers' ditance (RD) matrix  ('all_chr_1003_RD' used for caculating the kinship, kinship= 1 - RD  ), haplotype phases file ('hapdata.txt'), haplotype information file ('hapdata_info.txt') and the results of SNP_based GWAS ('snp_gwas_out.txt') 
+Subsets of the original data set (The 1001 Genome Consortium 2016) for running the code can be found in the folder 'data' and the format of all the files are described detailedly in README.md under folder 'data'.
 
 
 ### simulation.r
