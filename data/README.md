@@ -44,7 +44,7 @@ The file includes 7 column and m+1 rows (m is the number of markers)
 
 6th column: the posistion of markers.
 
-5th column: the chromosome of markers.
+7th column: the chromosome of markers.
 
 the fisrt row is the name of the 7 columns.
 
