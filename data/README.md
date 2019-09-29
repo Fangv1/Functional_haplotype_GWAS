@@ -22,12 +22,11 @@ Rogers' ditance (RD) matrix is used for caculating the kinship, kinship= 1 - RD
 
 
 
-### haplotype phases file (hapdata.txt)
+### haplotype phases file (hapdata.txt) and haplotype information file (hapdata_info.txt)
+The two files are obtained by the software 'SHAPEIT' (https://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html)
 
+The format of the files described at http://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html#gensample
 
-
-### haplotype information file (hapdata_info.txt)
-1004 
 
 
 ### the results of SNP_based GWAS (snp_gwas_out.txt)
