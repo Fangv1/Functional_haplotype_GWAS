@@ -14,6 +14,6 @@ Subsets of the original data set (The 1001 Genome Consortium 2016) for running t
 ### simulation.r
 simulation.r is the code of simulation study.
 
-This code is based on genotypic data (genodata.txt), Rogers' ditance matrix  (all_chr_1003_RD using for caculating the kinship), haplotype phases file (hapdata.txt), haplotype information file (hapdata_info.txt) and the results of SNP_based GWAS (snp_gwas_out.txt).
+This code is based on genotypic data (genodata.txt), Rogers' ditance matrix  (all_chr_1003_RD), haplotype phases file (hapdata.txt), haplotype information file (hapdata_info.txt) and the results of SNP_based GWAS (snp_gwas_out.txt).
 
 
