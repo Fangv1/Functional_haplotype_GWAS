@@ -43,7 +43,7 @@ The file includes 7 column and m+1 rows (m is the number of markers)
 
 2nd column: the name of markers.
 
-3rd column: the minor allele frequency (MAF) of markers.
+3rd column: the allele frequency (AF) of markers.
 
 4th column: the the estimated of markers.
 
