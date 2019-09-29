@@ -14,6 +14,12 @@ genotypic is a matrix (1003 X m, m is the nember of marker) with colnames and ro
 rownames is the name of genotypes and colnames is the name of markers.
 
 
+### Information of markers (genodata_info.txt)
+This file includes 5 column. 
+
+The 5 column are: the name of marker, the position of marker, reference allele, alternative allele and chromosome.
+
+
 ### Rogers' ditance matrix (all_chr_1003_RD )
 
 a matrix (1003  X 1003) with colnames and rownames.
