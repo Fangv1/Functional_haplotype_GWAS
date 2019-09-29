@@ -53,6 +53,6 @@ The file includes 7 column and m+1 rows (m is the number of markers)
 
 7th column: the chromosome of markers.
 
-the fisrt row is the name of the 7 columns and must be 'Number','Marker','MAF','Estimate','P_value','pos','chr'.
+the fisrt row is the name of the 7 columns and must be 'Number','Marker','AF','Estimate','P_value','pos','chr'.
 
 
