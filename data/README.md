@@ -5,7 +5,7 @@
 phenotypic data is a matrix (1004 rows and 2 column). 
 the first column is the name of genotype and second column is the phenotypic value 
 the first row is 'Genotype' and 'Phenotype'
-------------------
+
 Genotype	Phenotype
 10001	68.75
 10002	61
