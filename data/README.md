@@ -5,14 +5,14 @@
 phenotypic data is a matrix (1003 X 2) with colnames. 
 the first column is the name of genotype and second column is the phenotypic value. 
 
-Colnames must be 'Genotype' and 'Phenotype'.
+colnames must be 'Genotype' and 'Phenotype'.
 
 
 ### genotypic data (genodata.txt)
 
 genotypic is a matrix (1003 X m+1, m is the nember of marker) with the colnames.
 
-Colnames must be 'Genotype' + the names of marker. The first column is the names of genotype and the other column is the genotypic value of each marker (0 for the reference allele, 2 for alternative allele and 1 for heterozygote)
+colnames must be 'Genotype' + the names of marker. The first column is the names of genotype and the other column is the genotypic value of each marker (0 for the reference allele, 2 for alternative allele and 1 for heterozygote)
 
 
 ### Information of markers (genodata_info.txt)
