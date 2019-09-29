@@ -1,6 +1,7 @@
 # data for the code of SNP_FH_GWAS.r
 
 ### phenotypic data (FT10_phenotype.txt)
+
 phenotypic data is a matrix (1004 rows and 2 column). 
 the first column is the name of genotype and second column is the phenotypic value 
 the first row is 'Genotype' and 'Phenotype'
