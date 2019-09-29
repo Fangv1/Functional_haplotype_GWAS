@@ -45,14 +45,14 @@ The file includes 7 column and m+1 rows (m is the number of markers)
 
 3rd column: the minor allele frequency (MAF) of markers.
 
-4th column: the estimated effect of markers.
+4th column: the p value of markers.
 
-5th column: the p value of markers.
+5th column: the estimated effect of markers.
 
 6th column: the posistion of markers.
 
 7th column: the chromosome of markers.
 
-the fisrt row is the name of the 7 columns.
+the fisrt row is the name of the 7 columns and must be 'Number','Marker','MAF','P_value','Estimate','pos','chr'.
 
 
