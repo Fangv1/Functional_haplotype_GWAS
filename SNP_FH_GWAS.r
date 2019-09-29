@@ -20,7 +20,7 @@ print(head(pheno_file))
 genodata<-read.table('genodata.txt',header=T,stringsAsFactors=F)
 DATA <- merge(pheno_file, genodata, by.x = "Genotype", by.y = "Genotype",sort=T)
 ngen<-nrow(DATA)
-
+genodata_info<-read.table('genodata.txt',header=T,row.names = 1,stringsAsFactors=F)
 ### Roger_matrix for kinship 
 RD_all<-as.matrix(read.table('all_chr_1003_RD',header=T,row.names=1,stringsAsFactors=F))
 r_ind<-match(DATA$Genotype,rownames(RD_all))
@@ -55,22 +55,20 @@ onlyDATA <-data.frame(Y=coef %*% traitY,
                       intercept=coef %*% rep(1,ngen))
 
 ### Initialize the result
-start<-data.frame('Number','Marker','MAF','P_value','Estimate','pos','chr')
+start<-data.frame('Number','Marker','AF','Estimate','P_value','pos','chr')
 write.table(start,file=outfile_snp,quote=F,row.names=F,col.names=F,sep='\t')
 
-marker_names<-colnames(DATA)
-marker_ind<-grep('SNP',colnames(DATA))
+marker_names<-rownames(genodata_info)
+marker_ind<-1:nrow(genodata_info)
 
 LM_gwas<-function(m){
   print(m)
   label<-marker_names[m]
-  inds<-regexec("SNP(\\d+)(chr.+)",label)
-  labels<-unlist(do.call(rbind,regmatches(label, inds)))
   
   marker<-coef %*% DATA[,m]
   subDATA<-data.frame(onlyDATA,marker)
   lm_marker<-lm(Y ~ -1 +intercept  + marker,data=subDATA)
-  P_alle<-sum(DATA[,m])/(2*ngen)
+  P_alle<-mean(DATA[,m])/2
   P_value<-anova(lm_marker)['marker',]$Pr
   Estimate<-summary(lm_marker)$coefficients['marker',1]
   variance<-(summary(lm_marker)$sigma)**2.
@@ -78,13 +76,13 @@ LM_gwas<-function(m){
   gwas<-data.frame(number=m,
                    SNP=label,
                    P_alle=P_alle,
-                   P_value=P_value,
                    Estimate=Estimate,
+                   P_value=P_value,
                    #Prgene_value=Prgene_value,
                    #Estimate_rgene=Estimate_rgene
-                   pos=labels[,2],
-                   chr=labels[,3])
-  
+                   pos=genodata_info[m,1],
+                   chr=genodata_info[m,4])
+  #print(gwas)
   write.table(gwas,file=outfile_snp,quote=F,row.names=F,col.names=F,sep='\t',append=T)
 }
 
@@ -125,7 +123,7 @@ cat('kinship and haplotype :', all(rownames(kinship)==rownames(hap_data)[2*(1:nr
 #load GWAS result to filter some SNPs
 gwas_result<-read.table(outfile_snp,header=T,stringsAsFactors=F)
 dim(gwas_result)
-gwas_result<-gwas_result[which(gwas_result$P_value<0.01 & gwas_result$MAF>0.05 & gwas_result$MAF<0.95),]
+gwas_result<-gwas_result[which(gwas_result$P_value<0.01 & gwas_result$AF>0.05 & gwas_result$AF<0.95),]
 gwas_result<-gwas_result[order(gwas_result$chr,gwas_result$pos),]
 rownames(gwas_result)<-gwas_result$Marker
 dim(gwas_result)
@@ -168,7 +166,7 @@ HAP_LM<-function(m){
     if(length(snp_f)>0){
       for(s in snp_f){
         snp_r<-unlist(strsplit(s, "_"))        #select 3 SNP
-        maf<-gwas_result[snp_r,]$MAF
+        maf<-gwas_result[snp_r,]$AF
         snp_g<-DATA[,snp_r]  # genotype of 3 snp
         con<-cor(snp_g)
         ld<-con[upper.tri(con)]
