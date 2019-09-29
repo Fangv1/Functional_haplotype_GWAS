@@ -1,4 +1,4 @@
-pos	a1	a2	chr
+marker pos	ref	alt	chr
 SNP67519chr1	67519	T	C	chr1
 SNP70906chr1	70906	C	A	chr1
 SNP84621chr1	84621	G	A	chr1
