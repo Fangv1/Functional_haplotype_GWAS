@@ -1,6 +1,10 @@
 # Functional haplotype based GWAS
 Selecting closely-linked SNPs based on local epistatic effects for haplotype construction improves power of association mapping
 
+### FH_GWAS.R
+
+
+
 ### SNP_FH_GWAS.r
 SNP_FH_GWAS.r is the code for SNP_based GWAS and functional_haplotype_based GWAS.
 
