@@ -28,7 +28,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   `N_CPU_CORE` is the number of cup used for FH_GWAS.r, the defined value is 1.   
   *in the windows system, `N_CPU_CORE` can be just 1. in the linux, the `N_CPU_CORE` can be more than 1.*
   
-  If R working path is the same with the folder where the data are saved, the `path='E:study/data/gwas/'` is not necessary. 
+  If R working path is the same with the folder where the data are saved, the `path='E:study/data/gwas/'` is not necessary.   
   If the parameters (`windowsize`,`len`,`thr_add`,`thr_eps`,`N_CPU_CORE`) use the defined one, they can be omited, so the code can be wrote as follows:
   ```R
   FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
