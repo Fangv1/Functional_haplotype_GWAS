@@ -39,20 +39,13 @@ The format of the files described at http://mathgen.stats.ox.ac.uk/genetics_soft
 ### the results of SNP_based GWAS (snp_gwas_out.txt)
 The file includes 7 column and m+1 rows (m is the number of markers)
 
--1st column: the number of markers.
-
--2nd column: the name of markers.
-
--3rd column: the allele frequency (AF) of markers.
-
--4th column: the the estimated of markers.
-
--5th column:  the p value of markers.
-
--6th column: the posistion of markers.
-
--7th column: the chromosome of markers.
-
+* 1st column: the number of markers.    
+* 2nd column: the name of markers.   
+* 3rd column: the allele frequency (AF) of markers.   
+* 4th column: the the estimated of markers.  
+* 5th column:  the p value of markers.  
+* 6th column: the posistion of markers.   
+* 7th column: the chromosome of markers.
 the fisrt row is the name of the 7 columns and must be 'Number','Marker','AF','Estimate','P_value','pos','chr'.
 
 
