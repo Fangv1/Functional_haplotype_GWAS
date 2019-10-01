@@ -3,7 +3,6 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 
 ## To run functional haplotype based GWAS
 
-#### *The FH_GWAS is based on the package [`BGLR'](https://github.com/gdlc/BGLR-R)*
 
 ### 1. put all the data in the same folder
 
@@ -11,7 +10,10 @@ For example, firstly, put the `FH_GWAS.r`, `sample_genodata.txt`, `sample_genoda
 
 #### [The detail of data format are shown in the folder 'sample'](https://github.com/Fangv1/Functional_haplotype_GWAS/tree/master/sample) 
 
-### 2. run FH_GWAS.r  
+### 2. run FH_GWAS.r 
+
+*The FH_GWAS is based on the package [`BGLR'](https://github.com/gdlc/BGLR-R)*
+
 If all the data saved in the folder of `E:study/data/gwas/`  
   ```R
   setwd('E:study/data/gwas/')  
