@@ -3,7 +3,7 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 
 # To run functional haplotype based GWAS
 
-## 1. data prepare
+## 1.  data prepare
 
 ### a.  genotypic data (sample_genodata.txt)
 
@@ -26,7 +26,7 @@ kinship or distance is a matrix (n x n, n is the number of individuals) with row
 
 #### *Note: the value in the distance matrix should be not more than 1.*
 
-## 2. run the FH_GWAS
+## 2.  run the FH_GWAS
 
 ### a. put all the data in the same folder
 
