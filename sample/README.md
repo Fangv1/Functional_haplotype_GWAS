@@ -22,3 +22,8 @@ only one of them is needed for GWAS, which means either kinship matrix or distan
 kinship or distance is a matrix (n x n, n is the number of individuals) with rownames and colnames. rownames and colnames is the same that is the name of individuals. kinship can be caculated using the method of VanRaden (https://github.com/Zhiwu-Zhang-Lab/GAPIT/blob/master/GAPIT.kinship.VanRaden.R). 
 maximum
 #### *Note: the maximum value in the distance matrix should be 1.*
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
