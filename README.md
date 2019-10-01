@@ -23,8 +23,8 @@ Phenotypic data have two colums. the first column is the name of individuals and
 
 only one of them is needed for GWAS, which means either kinship matrix or distance matrix.
 kinship or distance is a matrix (n x n, n is the number of individuals) with rownames and colnames. rownames and colnames is the same that is the name of individuals. kinship can be caculated using the method of VanRaden (https://github.com/Zhiwu-Zhang-Lab/GAPIT/blob/master/GAPIT.kinship.VanRaden.R). 
-
-#### *Note: the value in the distance matrix should be not more than 1.*
+maximum
+#### *Note: the maximum value in the distance matrix should be 1.*
 
 ## 2.  run the FH_GWAS
 
@@ -36,6 +36,8 @@ For example, I put the FH_GWAS.r sample_genodata.txt, sample_genodata_info.txt, 
 if all the data saved in the folder of 'E:study/data/gwas/'  
   `setwd('E:study/data/gwas/')`  
   `source('FH_GWAS.r')`
+  `FH_GWAS(path='E:study/data/gwas/',geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt',out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)`  
+  *if the data is in the same folder with the R working path, and the other parameters use the defined, the code can be wrote as follows*
   `FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
   #### FH_GWAS(path=NULL,geno=NULL,genoinfo=NULL,pheno=NULL,kin=NULL,out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1) 
 
