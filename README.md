@@ -8,7 +8,7 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 For example, firstly, put the `FH_GWAS.r`, `sample_genodata.txt`, `sample_genodata_info.txt`, `sample_pheno.txt`, `sample_kinship.txt` and `hap_alleles.txt` (can be download in the folder 'sample') in the folder `E:study/data/gwas/`
 
 ### 2. run FH_GWAS.r  
-if all the data saved in the folder of `E:study/data/gwas/`  
+If all the data saved in the folder of `E:study/data/gwas/`  
   ```R
   setwd('E:study/data/gwas/')  
   source('FH_GWAS.r')
@@ -27,13 +27,13 @@ if all the data saved in the folder of `E:study/data/gwas/`
   `N_CPU_CORE` is the number of cup used for FH_GWAS.r, the defined value is 1.   
   *in the windows system, `N_CPU_CORE` can be just 1. in the linux, the `N_CPU_CORE` can be more than 1.*
   
-  *if R working path is the same with the folder where the data are saved, the path='E:study/data/gwas/' is not necessary.*  
+  if R working path is the same with the folder where the data are saved, the path='E:study/data/gwas/' is not necessary, and the other parameters are used the defined one, the code can be wrote as follows:
   ```R
   FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
   ```
-  #### FH_GWAS(path=NULL,geno=NULL,genoinfo=NULL,pheno=NULL,kin=NULL,out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1) 
+ 
 
-
+++++++++++++++++
 ### SNP_FH_GWAS.r
 SNP_FH_GWAS.r is the code for SNP_based GWAS and functional_haplotype_based GWAS.
 
