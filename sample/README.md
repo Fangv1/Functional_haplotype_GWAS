@@ -1,6 +1,6 @@
 # sample data for functional haplotype
 
-## 1.  data format
+## Data format
 
 ### a.  genotypic data (sample_genodata.txt)
 
