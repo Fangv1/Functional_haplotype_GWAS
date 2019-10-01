@@ -24,13 +24,13 @@ if all the data saved in the folder of `E:study/data/gwas/`
   ```len``` is the number of SNP in each haplotype, the defined value is 3  
   ```thr_add``` is the threshod of P value for additive effect, the defined value is 0.05  
   ```thr_eps``` is the threshod of P value for epistasis effect, the defined value is 0.1  
-  `N_CPU_CORE` is the number of cup used for FH_GWAS.r, the defined value is 1
-  *NOTE: in the windows system, `N_CPU_CORE` can be just 1.  
-  in the linux, the `N_CPU_CORE` can be more than 1.*
+  `N_CPU_CORE` is the number of cup used for FH_GWAS.r, the defined value is 1.   
+  *in the windows system, `N_CPU_CORE` can be just 1. in the linux, the `N_CPU_CORE` can be more than 1.*
   
   *if R working path is the same with the folder where the data are saved, the path='E:study/data/gwas/' is not necessary.*  
-  the defined windowsize is 50kb and 
-  `FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
+  ```R
+  FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
+  ```
   #### FH_GWAS(path=NULL,geno=NULL,genoinfo=NULL,pheno=NULL,kin=NULL,out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1) 
 
 
