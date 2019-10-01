@@ -33,7 +33,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```R
   FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
   ```
- #### [The detail of data format are shown in the folder 'sample'] 
+ #### [The detail of data format are shown in the folder 'sample'](https://github.com/Fangv1/Functional_haplotype_GWAS/edit/master/sample/README.md) 
 
 ---------------------------
 ### SNP_FH_GWAS.r
