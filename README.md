@@ -35,7 +35,8 @@ For example, I put the FH_GWAS.r sample_genodata.txt, sample_genodata_info.txt, 
 ### b. load FH_GWAS.r  
 if all the data saved in the folder of 'E:study/data/gwas/'
 `setwd('E:study/data/gwas/')`  
-`FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',out='test',dis='sample_dis.txt',windowsize=50000,len=3,thr_add=0.1,thr_eps=0.5,N_CPU_CORE=2)`  
+  `source('FH_GWAS.r)'
+  `FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',out='test',dis='sample_dis.txt',windowsize=50000,len=3,thr_add=0.1,thr_eps=0.5,N_CPU_CORE=2)`  
 `FH_GWAS(path=NULL,geno=NULL,genoinfo=NULL,pheno=NULL,kin=NULL,out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)`
 
 
