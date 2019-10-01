@@ -39,10 +39,17 @@ if all the data saved in the folder of 'E:study/data/gwas/'
   source('FH_GWAS.r')
   FH_GWAS(path='E:study/data/gwas/',geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt',out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)
   ```
-  ```path``` is the working path for FH_GWAS.r  
-  ```geno``` is the genotypic data
-  ```genoinfo``` is the iformation of markers
-  ```pheno``` is the phenotypic data
+  ```path``` is the working path for FH_GWAS.r   
+  ```geno``` is the genotypic data  
+  ```genoinfo``` is the iformation of markers  
+  ```pheno``` is the phenotypic data  
+  ```kin``` is the kinship matrix  
+  ```dis``` is the distance matrix  
+  ```windowsize``` is the window size for haplotype, the defined value is 50000bp  
+  ```len``` is the number of SNP in each haplotype, the defined value is 3  
+  ```thr_add``` is the threshod of P value for additive effect, the defined value is 0.05  
+  ```thr_eps``` is the threshod of P value for epistasis effect, the defined value is 0.1  
+  
   *if R working path is the same with the folder where the data are saved, the path='E:study/data/gwas/' is not necessary.*  
   the defined windowsize is 50kb and 
   `FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
