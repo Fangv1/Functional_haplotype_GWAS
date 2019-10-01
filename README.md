@@ -12,7 +12,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```R
   setwd('E:study/data/gwas/')  
   source('FH_GWAS.r')
-  FH_GWAS(path='E:study/data/gwas/',geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt',out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)
+  FH_GWAS(path='E:study/data/gwas/',geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt',dis=NULL,out=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)
   ```
   ```path``` is the working path for FH_GWAS.r   
   ```geno``` is the genotypic data  
@@ -20,6 +20,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```pheno``` is the phenotypic data  
   ```kin``` is the kinship matrix  
   ```dis``` is the distance matrix  
+  `out` is the file name for saving the result, for example `out=test`,the results will be saved in `test_FH_GWAS.txt`
   ```windowsize``` is the window size for haplotype, the defined value is 50000bp  
   ```len``` is the number of SNP in each haplotype, the defined value is 3  
   ```thr_add``` is the threshod of P value for additive effect, the defined value is 0.05  
@@ -27,7 +28,8 @@ If all the data saved in the folder of `E:study/data/gwas/`
   `N_CPU_CORE` is the number of cup used for FH_GWAS.r, the defined value is 1.   
   *in the windows system, `N_CPU_CORE` can be just 1. in the linux, the `N_CPU_CORE` can be more than 1.*
   
-  if R working path is the same with the folder where the data are saved, the path='E:study/data/gwas/' is not necessary, and the other parameters are used the defined one, the code can be wrote as follows:
+  If R working path is the same with the folder where the data are saved, the `path='E:study/data/gwas/'` is not necessary. 
+  If the parameters (`windowsize`,`len`,`thr_add`,`thr_eps`,`N_CPU_CORE`) use the defined one, they can be omited, so the code can be wrote as follows:
   ```R
   FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
   ```
