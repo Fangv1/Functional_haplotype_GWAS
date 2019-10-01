@@ -33,7 +33,7 @@ kinship or distance is a matrix (n x n, n is the number of individuals) with row
 For example, I put the FH_GWAS.r sample_genodata.txt, sample_genodata_info.txt, sample_pheno.txt, sample_kinship.txt and hap_alleles.txt (can be download in the folder 'sample') in the folder 'E:study/data/gwas/'
 
 ### b. load FH_GWAS.r  
-if all the data saved in the folder of 'E:study/data/gwas/'
+if all the data saved in the folder of 'E:study/data/gwas/'  
   `setwd('E:study/data/gwas/')`  
   `source('FH_GWAS.r')`
   `FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
