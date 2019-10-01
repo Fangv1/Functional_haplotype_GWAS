@@ -6,18 +6,19 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 
 ### 1. put all the data in the same folder
 
-For example, firstly, put the `FH_GWAS.r`, `sample_genodata.txt`, `sample_genodata_info.txt`, `sample_pheno.txt`, `sample_kinship.txt` and `hap_alleles.txt` (can be download in the folder 'sample') in the folder `E:study/data/gwas/`
+For example, firstly, put the`FH_GWAS.r`, `sample_genodata.txt`, `sample_genodata_info.txt`, `sample_pheno.txt`, `sample_kinship.txt` and `hap_alleles.txt` (can be download in the folder 'sample') in the folder `E:study/data/gwas/`
 
 #### [The detail of data format are shown in the folder 'sample'](https://github.com/Fangv1/Functional_haplotype_GWAS/tree/master/sample) 
 
-### 2. run FH_GWAS.r 
+### 2. run FH_GWAS
 
-*The FH_GWAS is based on the package [`BGLR'](https://github.com/gdlc/BGLR-R)*
+*The FH_GWAS is based on the package [BGLR](https://github.com/gdlc/BGLR-R)*
 
 If all the data saved in the folder of `E:study/data/gwas/`  
   ```R
   setwd('E:study/data/gwas/')  
-  source('FH_GWAS.r')
+  library(BGLR)
+  source('FH_GWAS.r')  ## load the function of FH_GWAS 
   FH_GWAS(path='E:study/data/gwas/',geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt',dis=NULL,out=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)
   ```
   ```path``` is the working path for FH_GWAS.r   
