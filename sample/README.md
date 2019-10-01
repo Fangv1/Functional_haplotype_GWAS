@@ -4,9 +4,9 @@
 
 ### 1.  genotypic data (sample_genodata.txt)
 
-Genotypic data is file with n+1 rows and m+1 columns, in which n is the number of individuals and m is the number of markers.
-the first column is the name of individuals and the first row is the names of markers.
-the genotypic value for each marker should be 0, 1 and 2 (0 for the reference allele, 2 for alternative allele and 1 for heterozygote). please look at the sample data 'sample_genodata.txt' in the folder of 'sample'.
+Genotypic data is file with n+1 rows and m+1 columns, in which n is the number of individuals and m is the number of markers.  
+the first column is the name of individuals and the first row is the names of markers.    
+the genotypic value for each marker should be 0, 1 and 2 (0 for the reference allele, 2 for alternative allele and 1 for heterozygote).   
 
 ### 2.  marker information (sample_genodata_info.txt)
 
