@@ -7,6 +7,8 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 
 #### a. genotypic data
 
+genotypic is file with n+1 row and m+1 column, inwhich n is the number of genotypes and m is the number of markers.
+the genotypic value should be 0,1 and 2 (0 for the reference allele, 2 for alternative allele and 1 for heterozygote). please look the sample data 'sample_genodata.txt' in the floder of 'sample'.
 
 #### b. marker information
 
