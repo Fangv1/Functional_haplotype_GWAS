@@ -24,6 +24,9 @@ if all the data saved in the folder of `E:study/data/gwas/`
   ```len``` is the number of SNP in each haplotype, the defined value is 3  
   ```thr_add``` is the threshod of P value for additive effect, the defined value is 0.05  
   ```thr_eps``` is the threshod of P value for epistasis effect, the defined value is 0.1  
+  `N_CPU_CORE` is the number of cup used for FH_GWAS.r, the defined value is 1
+  *NOTE: in the windows system, `N_CPU_CORE` can be just 1.  
+  in the linux, the `N_CPU_CORE` can be more than 1.*
   
   *if R working path is the same with the folder where the data are saved, the path='E:study/data/gwas/' is not necessary.*  
   the defined windowsize is 50kb and 
