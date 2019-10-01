@@ -37,7 +37,7 @@ if all the data saved in the folder of 'E:study/data/gwas/'
   `setwd('E:study/data/gwas/')`  
   `source('FH_GWAS.r')`
   `FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
-  `FH_GWAS(path=NULL,geno=NULL,genoinfo=NULL,pheno=NULL,kin=NULL,out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)`
+  #### FH_GWAS(path=NULL,geno=NULL,genoinfo=NULL,pheno=NULL,kin=NULL,out=NULL,dis=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1) 
 
 
 ### SNP_FH_GWAS.r
