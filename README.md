@@ -5,14 +5,18 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 
 ## 1. data prepare
 
-#### a. genotypic data
+#### a. genotypic data (sample_genodata.txt)
 
-genotypic is file with n+1 row and m+1 column, inwhich n is the number of genotypes and m is the number of markers.
-the genotypic value should be 0,1 and 2 (0 for the reference allele, 2 for alternative allele and 1 for heterozygote). please look the sample data 'sample_genodata.txt' in the floder of 'sample'.
+Genotypic data is file with n+1 rows and m+1 columns, in which n is the number of individuals and m is the number of markers.
+the first column is the name of individuals and the first row is the names of markers.
+the genotypic value for each marker should be 0, 1 and 2 (0 for the reference allele, 2 for alternative allele and 1 for heterozygote). please look at the sample data 'sample_genodata.txt' in the floder of 'sample'.
 
-#### b. marker information
+#### b. marker information (sample_genodata_info.txt)
 
-#### c. phenotypic data
+Marker information includes 5 columns, which are the name of markers, reference allele, alternative allele, chromosome and posistion.
+
+#### c. phenotypic data (sample_pheno.txt)
+phenotypic data have two colums. the first column is the name of individuals and the second column is the phenotypic value for the corresponded individual.
 
 #### d. kinship matrix or distance matrix
 
