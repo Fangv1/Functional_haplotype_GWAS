@@ -33,7 +33,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```
  
 
-++++++++++++++++
+---------------------------
 ### SNP_FH_GWAS.r
 SNP_FH_GWAS.r is the code for SNP_based GWAS and functional_haplotype_based GWAS.
 
