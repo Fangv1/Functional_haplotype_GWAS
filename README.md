@@ -7,6 +7,8 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 
 For example, firstly, put the `FH_GWAS.r`, `sample_genodata.txt`, `sample_genodata_info.txt`, `sample_pheno.txt`, `sample_kinship.txt` and `hap_alleles.txt` (can be download in the folder 'sample') in the folder `E:study/data/gwas/`
 
+#### [The detail of data format are shown in the folder 'sample'](https://github.com/Fangv1/Functional_haplotype_GWAS/tree/master/sample) 
+
 ### 2. run FH_GWAS.r  
 If all the data saved in the folder of `E:study/data/gwas/`  
   ```R
@@ -33,7 +35,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```R
   FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
   ```
- #### [The detail of data format are shown in the folder 'sample'](https://github.com/Fangv1/Functional_haplotype_GWAS/tree/master/sample) 
+ 
 
 ---------------------------
 ### SNP_FH_GWAS.r
