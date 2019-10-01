@@ -5,26 +5,35 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 
 ## 1. data prepare
 
-#### a. genotypic data (sample_genodata.txt)
+### a. genotypic data (sample_genodata.txt)
 
 Genotypic data is file with n+1 rows and m+1 columns, in which n is the number of individuals and m is the number of markers.
 the first column is the name of individuals and the first row is the names of markers.
 the genotypic value for each marker should be 0, 1 and 2 (0 for the reference allele, 2 for alternative allele and 1 for heterozygote). please look at the sample data 'sample_genodata.txt' in the folder of 'sample'.
 
-#### b. marker information (sample_genodata_info.txt)
+### b. marker information (sample_genodata_info.txt)
 
 Marker information includes 5 columns, which are the name of markers, reference allele, alternative allele, chromosome and posistion.
 
-#### c. phenotypic data (sample_pheno.txt)
+### c. phenotypic data (sample_pheno.txt)
 
 Phenotypic data have two colums. the first column is the name of individuals and the second column is the phenotypic value for the corresponded individual.
 
-#### d. kinship matrix or distance matrix (sample_kinship.txt or sample_dis.txt)
+### d. kinship matrix or distance matrix (sample_kinship.txt or sample_dis.txt)
 
 only one of them is needed for GWAS, which means either kinship matrix or distance matrix.
 kinship or distance is a matrix (n x n, n is the number of individuals) with rownames and colnames. rownames and colnames is the same that is the name of individuals. kinship can be caculated using the method of VanRaden (https://github.com/Zhiwu-Zhang-Lab/GAPIT/blob/master/GAPIT.kinship.VanRaden.R). 
 
-##### Note: the value in the distance matrix should be not more than 1.
+#### Note: the value in the distance matrix should be not more than 1.
+
+## 2. run the FH_GWAS
+
+### a. put all the data in the same folder
+
+For example, I put the FH_GWAS.r sample_genodata.txt, sample_genodata_info.txt, sample_pheno.txt, sample_kinship.txt and hap_alleles.txt (can be download in the folder 'sample') in the folder 'E:study/data/gwas/FH_GWAS/'
+
+### b. load FH_GWAS.r
+
 
 
 ### SNP_FH_GWAS.r
