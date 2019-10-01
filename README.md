@@ -20,7 +20,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```pheno``` is the phenotypic data  
   ```kin``` is the kinship matrix  
   ```dis``` is the distance matrix  
-  `out` is the file name for saving the result, for example `out=test`,the results will be saved in `test_FH_GWAS.txt`
+  `out` is the file name for saving the result, for example `out='test'`,the results will be saved in `test_FH_GWAS.txt`
   ```windowsize``` is the window size for haplotype, the defined value is 50000bp  
   ```len``` is the number of SNP in each haplotype, the defined value is 3  
   ```thr_add``` is the threshod of P value for additive effect, the defined value is 0.05  
@@ -33,7 +33,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```R
   FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
   ```
- 
+ #### [The detail of data format are shown in the folder 'sample'] 
 
 ---------------------------
 ### SNP_FH_GWAS.r
