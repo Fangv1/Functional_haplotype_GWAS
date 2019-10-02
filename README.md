@@ -61,7 +61,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```R
   SNP	combination_num
   ```
-The name of SNP and the number of combination of triple SNPs within the windowsize. the sum of this number is suggested for the Bonferroni correction.
+The name of SNP and the number of combination of triple SNPs within the windowsize. The sum of this number is suggested for the Bonferroni correction.
 
 ---------------------------
 ### SNP_FH_GWAS.r
