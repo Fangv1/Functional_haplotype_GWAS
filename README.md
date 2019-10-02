@@ -11,7 +11,7 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 * kinship matrix or distance matrix   
 #### [The detail of data format are shown in the folder 'sample'](https://github.com/Fangv1/Functional_haplotype_GWAS/tree/master/sample) 
 
-put all af the dataset in the same folder
+* put all af the dataset in the same folder   
 For example, put the`FH_GWAS.r`, `sample_genodata.txt`, `sample_genodata_info.txt`, `sample_pheno.txt` and `sample_kinship.txt` in the folder `E:study/data/gwas/`
 
 
