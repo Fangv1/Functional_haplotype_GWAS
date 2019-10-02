@@ -33,11 +33,11 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```pheno``` is the phenotypic data  
   ```kin``` is the kinship matrix  
   ```dis``` is the distance matrix  
-  `out` is the file name for saving the result, for example `out='test'`,the results will be saved in `test_FH_GWAS.txt`
+  `out` is the file name for saving the result
   ```windowsize``` is the window size for haplotype, the defined value is 50000bp  
   ```thr_add``` is the threshod of P value for additive effect, the defined value is 0.05  
   ```thr_eps``` is the threshod of P value for epistasis effect, the defined value is 0.1  
-  `N_CPU_CORE` is the number of cup used for FH_GWAS.r, the defined value is 1.   
+  `N_CPU_CORE` is the number of cup used for FH_GWAS, the defined value is 1.   
   *in the windows system, `N_CPU_CORE` can be just 1. in the linux, the `N_CPU_CORE` can be more than 1.*
   
   If R working path is the same with the folder where the data are saved, the `path='E:study/data/gwas/'` is not necessary.   
@@ -46,6 +46,19 @@ If all the data saved in the folder of `E:study/data/gwas/`
   FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
   ```
  
+ 
+ ## 3. results   
+ The outputs of FH_GWAS will be saved in two files.  
+ When the `out='test'`, then one is `test_FH_GWAS.txt` and another is `test_hap_number.txt`. However, when the defined `out=NULL` is used, then the out is the name in the phenotypic data, taking the sample data for example, in this case, the outfile are  `flowering_time_FH_GWAS.txt` and `flowering_time_hap_number.txt`.  
+ #### * XX_FH_GWAS.txt  
+ ```R
+ SNP1	SNP2	SNP3	chr	pos	Pvalue_HAP	pvalue_snp1	pvalue_snp2	pvalue_snp3	pvalue_snp12	pvalue_snp13	pvalue_snp23	pvalue_snp123
+ ````  
+ 
+  #### * XX_hap_number.txt 
+  ```R
+  SNP	combination_num
+  ```
 
 ---------------------------
 ### SNP_FH_GWAS.r
