@@ -51,7 +51,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
  The outputs of FH_GWAS will be saved in two files.  
  When the `out='test'`, then one is `test_FH_GWAS.txt` and another is `test_hap_number.txt`. However, when the defined `out=NULL` is used, then the outfile will use the name in the phenotypic data, taking the sample data for example, in this case, the outfile are  `flowering_time_FH_GWAS.txt` and `flowering_time_hap_number.txt`.
  
- #### *  XX_FH_GWAS.txt  
+ #### *XX_FH_GWAS.txt*  
  ```R
  SNP1	SNP2	SNP3	chr	pos	Pvalue_HAP	pvalue_snp1	pvalue_snp2	pvalue_snp3	pvalue_snp12	pvalue_snp13	pvalue_snp23	pvalue_snp123
 SNP2692135chr1	SNP2697161chr1	SNP2712514chr1	chr1	2700603	0.0722437259742261	0.0335043010881686	0.0394849514380679	0.0356463351104863	0.0201170509171901	0.023280751078962	NA	NA
@@ -59,7 +59,7 @@ SNP2692135chr1	SNP2697161chr1	SNP2712657chr1	chr1	2700651	0.0722437259742261	0.0
  ````  
  The name of the three SNPs, chromosome, mean position of the three SNPs, P value of haplotype, three P value of SNPs and three P value of pairwise epistasis and P value of three-term epistasis. NA means misiing value becase of the collinear effect.
  
-  ####  *  XX_hap_number.txt 
+  ####  *XX_hap_number.txt*   
   ```R
   SNP	combination_num
   SNP67519chr1	4
