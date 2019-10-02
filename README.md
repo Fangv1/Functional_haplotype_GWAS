@@ -33,7 +33,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```pheno``` is the phenotypic data  
   ```kin``` is the kinship matrix  
   ```dis``` is the distance matrix  
-  `out` is the file name for saving the result
+  `out` is the file name for saving the result   
   ```windowsize``` is the window size for haplotype, the defined value is 50000bp  
   ```thr_add``` is the threshod of P value for additive effect, the defined value is 0.05  
   ```thr_eps``` is the threshod of P value for epistasis effect, the defined value is 0.1  
