@@ -62,6 +62,10 @@ SNP2692135chr1	SNP2697161chr1	SNP2712657chr1	chr1	2700651	0.0722437259742261	0.0
   ####  *  XX_hap_number.txt 
   ```R
   SNP	combination_num
+  SNP67519chr1	4
+SNP70906chr1	0
+SNP85817chr1	364
+SNP109855chr1	169
   ```
 The name of SNP and the number of combination of triple SNPs within the windowsize. The sum of this number is suggested for the Bonferroni correction.
 
