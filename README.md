@@ -50,12 +50,13 @@ If all the data saved in the folder of `E:study/data/gwas/`
  ## 3. results   
  The outputs of FH_GWAS will be saved in two files.  
  When the `out='test'`, then one is `test_FH_GWAS.txt` and another is `test_hap_number.txt`. However, when the defined `out=NULL` is used, then the outfile will use the name in the phenotypic data, taking the sample data for example, in this case, the outfile are  `flowering_time_FH_GWAS.txt` and `flowering_time_hap_number.txt`.  
- #### * XX_FH_GWAS.txt  
+ #### ** _FH_GWAS.txt  
  ```R
  SNP1	SNP2	SNP3	chr	pos	Pvalue_HAP	pvalue_snp1	pvalue_snp2	pvalue_snp3	pvalue_snp12	pvalue_snp13	pvalue_snp23	pvalue_snp123
  ````  
+ the 
  
-  #### * XX_hap_number.txt 
+  ####  ** _hap_number.txt 
   ```R
   SNP	combination_num
   ```
