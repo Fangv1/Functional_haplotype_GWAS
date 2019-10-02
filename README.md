@@ -57,7 +57,7 @@ If all the data saved in the folder of `E:study/data/gwas/`
 SNP2692135chr1	SNP2697161chr1	SNP2712514chr1	chr1	2700603	0.0722437259742261	0.0335043010881686	0.0394849514380679	0.0356463351104863	0.0201170509171901	0.023280751078962	NA	NA
 SNP2692135chr1	SNP2697161chr1	SNP2712657chr1	chr1	2700651	0.0722437259742261	0.0335043010881686	0.0394849514380679	0.0356463351104863	0.0201170509171901	0.023280751078962	NA	NA
  ````  
- The name of the three SNPs, chromosome, mean position of the three SNPs, P value of haplotype, three P value of SNPs and three P value of pairwise epistasis and P value of three-term epistasis.
+ The name of the three SNPs, chromosome, mean position of the three SNPs, P value of haplotype, three P value of SNPs and three P value of pairwise epistasis and P value of three-term epistasis. NA means misiing value becase of the collinear effect.
  
   ####  *  XX_hap_number.txt 
   ```R
