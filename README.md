@@ -6,7 +6,7 @@ Selecting closely-linked SNPs based on local epistatic effects for haplotype con
 
 ### 1. put all the data in the same folder
 
-For example, firstly, put the`FH_GWAS.r`, `sample_genodata.txt`, `sample_genodata_info.txt`, `sample_pheno.txt`, `sample_kinship.txt` and `hap_alleles.txt` (can be download in the folder 'sample') in the folder `E:study/data/gwas/`
+For example, firstly, put the`FH_GWAS.r`, `sample_genodata.txt`, `sample_genodata_info.txt`, `sample_pheno.txt` and `sample_kinship.txt` in the folder `E:study/data/gwas/`
 
 #### [The detail of data format are shown in the folder 'sample'](https://github.com/Fangv1/Functional_haplotype_GWAS/tree/master/sample) 
 
@@ -19,9 +19,9 @@ If all the data saved in the folder of `E:study/data/gwas/`
   setwd('E:study/data/gwas/')  
   library(BGLR)
   source('FH_GWAS.r')  ## load the function of FH_GWAS 
-  FH_GWAS(path='E:study/data/gwas/',geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt',dis=NULL,out=NULL,windowsize=50000,len=3,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)
+  FH_GWAS(path='E:study/data/gwas/',geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt',dis=NULL,out=NULL,windowsize=50000,thr_add=0.05,thr_eps=0.1,N_CPU_CORE=1)
   ```
-  ```path``` is the working path for FH_GWAS.r   
+  ```path``` is the working path for FH_GWAS  
   ```geno``` is the genotypic data  
   ```genoinfo``` is the iformation of markers  
   ```pheno``` is the phenotypic data  
@@ -29,14 +29,13 @@ If all the data saved in the folder of `E:study/data/gwas/`
   ```dis``` is the distance matrix  
   `out` is the file name for saving the result, for example `out='test'`,the results will be saved in `test_FH_GWAS.txt`
   ```windowsize``` is the window size for haplotype, the defined value is 50000bp  
-  ```len``` is the number of SNP in each haplotype, the defined value is 3  
   ```thr_add``` is the threshod of P value for additive effect, the defined value is 0.05  
   ```thr_eps``` is the threshod of P value for epistasis effect, the defined value is 0.1  
   `N_CPU_CORE` is the number of cup used for FH_GWAS.r, the defined value is 1.   
   *in the windows system, `N_CPU_CORE` can be just 1. in the linux, the `N_CPU_CORE` can be more than 1.*
   
   If R working path is the same with the folder where the data are saved, the `path='E:study/data/gwas/'` is not necessary.   
-  If the parameters (`windowsize`,`len`,`thr_add`,`thr_eps`,`N_CPU_CORE`) use the defined one, they can be omited, so the code can be wrote as follows:
+  If the parameters (`windowsize`,`thr_add`,`thr_eps`,`N_CPU_CORE`) use the defined one, they can be omited, so the code can be wrote as follows:
   ```R
   FH_GWAS(geno='sample_genodata.txt',genoinfo='sample_genodata_info.txt',pheno='sample_pheno.txt',kin='sample_kinship.txt' )`  
   ```
