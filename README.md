@@ -1,6 +1,6 @@
 # Functional haplotype based GWAS
 
-#### Cite: Liu, Fang, et al. "Selecting Closely-Linked SNPs Based on Local Epistatic Effects for Haplotype Construction Improves Power of Association Mapping." G3: Genes, Genomes, Genetics (2019): g3-400451.
+Cite: Liu, Fang, et al. "Selecting Closely-Linked SNPs Based on Local Epistatic Effects for Haplotype Construction Improves Power of Association Mapping." G3: Genes, Genomes, Genetics (2019): g3-400451.
 
 ## To run functional haplotype based GWAS
 
